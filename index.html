@@ -1,9 +1,22 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <title>Hello</title>
-</head>
-<body>
-    <p>Hello</p>
-    <iframe src="https://www.bing.com/maps?cp=63.833414%7E20.201339&lvl=19.0&style=h"></iframe>
-</body>
+    <head>
+        <title>loadmapasyncHTML</title>
+        <style type='text/css'>body{margin:0;padding:0;overflow:hidden;font-family:'Segoe UI',Helvetica,Arial,Sans-Serif}</style>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+        <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=AiwlC35quv0_rHedVl-lvtGQ5I3JHQsh5uFVmbcHXaH48r6nbpFEFHwuv5fHjBDH'></script>
+        <script type='text/javascript'>
+                var map;
+                function loadMapScenario() {
+                    map = new Microsoft.Maps.Map(document.getElementById('myMap'), {});
+                }
+                
+            
+        </script>
+    </head>
+    <body onload='loadMapScenario();'>
+        <div id='printoutPanel'></div>
+        
+        <div id='myMap' style='width: 100vw; height: 100vh;'></div>
+    </body>
 </html>
